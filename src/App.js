@@ -6,6 +6,7 @@ import RefsDemo from './components/RefsDemo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       {/*<UserProvider value="vishwas">
         <ComponentC/>
       </UserProvider>*/}  
-      <PostList/>
+      <PostForm/>
     </div>
   );
 }
