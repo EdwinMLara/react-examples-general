@@ -8,6 +8,10 @@ import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
 import HookCounterThree from './components/HookCounterThree';
+import HookCounterFour from './components/HookCounterFour';
+import ClassCounterOne from './components/ClassCounterOne';
+import HoocounterOneUseeffec from './components/HookcounterOneUseEffec'
+
 
 function App() {
   return (
@@ -15,7 +19,6 @@ function App() {
       {/*<UserProvider value="vishwas">
         <ComponentC/>
       </UserProvider>*/}  
-      <HookCounterThree></HookCounterThree>
     </div>
   );
 }
