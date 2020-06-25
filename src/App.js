@@ -18,7 +18,8 @@ function App() {
     <div className="App">
       {/*<UserProvider value="vishwas">
         <ComponentC/>
-      </UserProvider>*/}  
+      </UserProvider>*/}
+      <HoocounterOneUseeffec/>  
     </div>
   );
 }
