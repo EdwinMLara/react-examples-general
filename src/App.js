@@ -11,6 +11,8 @@ import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
 import ClassCounterOne from './components/ClassCounterOne';
 import HoocounterOneUseeffec from './components/HookcounterOneUseEffec'
+import ClassMouse from './components/ClassMouse';
+import HookMouse from './HookMouse';
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
       {/*<UserProvider value="vishwas">
         <ComponentC/>
       </UserProvider>*/}
-      <HoocounterOneUseeffec/>  
+      <HookMouse/>  
     </div>
   );
 }
