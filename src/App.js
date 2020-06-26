@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ComponentE from './components/ComponentE'
+import CounteroneR from './components2/CounteroneR';
 
 
 export const UserContext2 = React.createContext();
@@ -12,11 +12,12 @@ function App() {
       {/*<UserProvider value="vishwas">
         <ComponentC/>
       </UserProvider>*/}
-      <UserContext2.Provider value="Edwin Miguel">
+      {/*<UserContext2.Provider value="Edwin Miguel">
         <ChannelContext.Provider value="Insoel.comm">
           <ComponentE/>
         </ChannelContext.Provider>
-      </UserContext2.Provider>  
+    </UserContext2.Provider>*/}
+      <CounteroneR></CounteroneR>   
     </div>
   );
 }
