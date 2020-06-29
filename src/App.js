@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import CounteroneR from './components2/CounteroneR';
 import CounterTwoR from './components2/CounterTwoR';
+import CounterthreeR from './components2/CounterthreeR'
 
 
 export const UserContext2 = React.createContext();
@@ -18,7 +19,7 @@ function App() {
           <ComponentE/>
         </ChannelContext.Provider>
     </UserContext2.Provider>*/}
-      <CounterTwoR/>
+      <CounterthreeR/>
     </div>
   );
 }
