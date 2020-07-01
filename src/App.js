@@ -1,7 +1,6 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import DataFetchingOne from './fetching/components/DataFetchingOne'
-import DataFetchingTwoR from './fetching/components/DataFetchingTwoR';
+import ParentComponent from './useCallbacks/components/ParentComponent';
 
 
 export const UserContext2 = React.createContext();
@@ -38,7 +37,7 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <DataFetchingTwoR/>
+        <ParentComponent/>
       </div>
   );
 }
