@@ -1,8 +1,7 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import ComponentA from './ContextReducer/components/ComponentA';
-import ComponentB from './ContextReducer/components/ComponentB';
-import ComponentC from './ContextReducer/components/ComponentC';
+import DataFetchingOne from './fetching/components/DataFetchingOne'
+import DataFetchingTwoR from './fetching/components/DataFetchingTwoR';
 
 
 export const UserContext2 = React.createContext();
@@ -30,7 +29,6 @@ function App() {
   const [count,dispatch] = useReducer(reducer,inicialState)
 
   return (
-    <CountContext.Provider value={{countState: count, countDispatch: dispatch}}>
       <div className="App">
         {/*<UserProvider value="vishwas">
           <ComponentC/>
@@ -40,12 +38,8 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        Count: {count}
-        <ComponentA/>
-        <ComponentB/>
-        <ComponentC/>
+        <DataFetchingTwoR/>
       </div>
-    </CountContext.Provider>
   );
 }
 
