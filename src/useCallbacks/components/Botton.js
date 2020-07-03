@@ -11,4 +11,4 @@ function Botton({handleClick, children}) {
     )
 }
 
-export default Botton
+export default React.memo(Botton)
