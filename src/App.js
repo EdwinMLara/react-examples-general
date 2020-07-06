@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import ParentComponent from './useCallbacks/components/ParentComponent';
+import Count from './useMemo/components/Counter';
 
 
 export const UserContext2 = React.createContext();
@@ -37,7 +37,7 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <ParentComponent/>
+        <Count/>
       </div>
   );
 }
