@@ -12,16 +12,17 @@ function Counter() {
         setCounterTwo(counterTwo +1 )
     }
 
-    const isEvent = () =>{
+    const isEvent = useMemo( () =>{
         let i = 0;
         while(i < 2000000000) i++;
         return counterOne % 2 === 0
-    }
+    },[counterOne])
+
     return (
         <div>
             <div>
                 <button onClick={incrementOne}>Counte: one {counterOne}</button>
-                <span>{isEvent() ? 'Even' : 'Odd'}</span>
+                <span>{isEvent ? 'Even' : 'Odd'}</span>
             </div>
             <div>
                 <button onClick={incrementTwo}>Counte: two {counterTwo}</button>
