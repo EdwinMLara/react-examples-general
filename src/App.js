@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import Count from './useMemo/components/Counter';
+import FocusInput from './useRef/components/FocusInput';
 
 
 export const UserContext2 = React.createContext();
@@ -37,7 +37,7 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <Count/>
+        <FocusInput/>
       </div>
   );
 }
