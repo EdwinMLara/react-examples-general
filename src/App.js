@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import FocusInput from './useRef/components/FocusInput';
-
+import ClassTimmer from './useRef/components/ClassTimmer';
+import TimmerHook from './useRef/components/TimmerHook';
 
 export const UserContext2 = React.createContext();
 export const ChannelContext = React.createContext();
@@ -37,7 +37,8 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <FocusInput/>
+        <ClassTimmer/>
+        <TimmerHook/>
       </div>
   );
 }

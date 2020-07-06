@@ -1,0 +1,34 @@
+import React, { Component } from 'react'
+
+class ClassTimmer extends Component {
+    interval
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            timer: 0
+        }
+    }
+
+    componentDidMount(){
+        this.interval = setInterval(() =>{
+            this.setState( prevState => ({timer: prevState.timer + 1}))
+        },1000)
+    }
+
+    componentWillMount(){
+        clearInterval(this.interval)
+    }
+
+    render() {
+        return (
+            <div>
+                Class timer - {this.state.timer}
+                <button onClick={()=>{clearInterval(this.interval)}}>Clear interval</button>
+            </div>
+        )
+    }
+}
+
+export default ClassTimmer
