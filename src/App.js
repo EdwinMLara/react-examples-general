@@ -1,7 +1,6 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import CounterOne from './customHook/components/CounterOne';
-import CounterTwo from './customHook/components/CounterTwo';
+import UserForm from './customHook/components/UserForm';
 
 export const UserContext2 = React.createContext();
 export const ChannelContext = React.createContext();
@@ -37,8 +36,7 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <CounterOne/>
-        <CounterTwo/>
+        <UserForm/>
       </div>
   );
 }
