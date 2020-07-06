@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import DocTitleOne from './customHook/components/DocTitleOne';
-import DocTitleTwo from './customHook/components/DocTitleTwo';
+import CounterOne from './customHook/components/CounterOne';
+import CounterTwo from './customHook/components/CounterTwo';
 
 export const UserContext2 = React.createContext();
 export const ChannelContext = React.createContext();
@@ -37,8 +37,8 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <DocTitleOne/>
-        <DocTitleTwo/>
+        <CounterOne/>
+        <CounterTwo/>
       </div>
   );
 }
