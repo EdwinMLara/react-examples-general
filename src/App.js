@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react';
 import './App.css';
-import ClassTimmer from './useRef/components/ClassTimmer';
-import TimmerHook from './useRef/components/TimmerHook';
+import DocTitleOne from './customHook/components/DocTitleOne';
+import DocTitleTwo from './customHook/components/DocTitleTwo';
 
 export const UserContext2 = React.createContext();
 export const ChannelContext = React.createContext();
@@ -37,8 +37,8 @@ function App() {
             <ComponentE/>
           </ChannelContext.Provider>
       </UserContext2.Provider>*/}
-        <ClassTimmer/>
-        <TimmerHook/>
+        <DocTitleOne/>
+        <DocTitleTwo/>
       </div>
   );
 }
